@@ -9,3 +9,4 @@ whitenoise>=6.9,<7
 Pillow>=13.0.0
 gunicorn>=23,<24
 psycopg[binary]>=3.2,<4
+django-cloudinary-storage==0.3.0
