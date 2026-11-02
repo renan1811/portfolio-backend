@@ -1,0 +1,25 @@
+[project]
+name = "portfolio-backend"
+version = "0.1.0"
+description = "Estrutura inicial da API do portfólio"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "django>=6.1.2",
+    "djangorestframework<3.19,>=3.18",
+    "django-cors-headers>=4.7,<5",
+    "django-filter>=25,<27",
+    "drf-spectacular>=0.28,<1",
+    "dj-database-url>=2.2,<4",
+    "python-dotenv>=1,<2",
+    "whitenoise>=6.9,<7",
+    "Pillow>=13.0.0",
+]
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+dev = "python manage.py runserver 127.0.0.1:8000"
+migrate = "python manage.py migrate"
+check = "python manage.py check"
+createsuperuser = "python manage.py createsuperuser"
