@@ -115,3 +115,22 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'Estrutura inicial da API do portfólio.',
     'VERSION': '0.1.0',
 }
+
+# Registrar erros internos do Django nos logs do Fabroku
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console_errors': {
+            'class': 'logging.StreamHandler',
+            'level': 'ERROR',
+        },
+    },
+    'loggers': {
+        'django.request': {
+            'handlers': ['console_errors'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+    },
+}
