@@ -1,0 +1,11 @@
+django>=6.1.2,<6.2
+djangorestframework>=3.18,<3.19
+django-cors-headers>=4.7,<5
+django-filter>=25,<27
+drf-spectacular>=0.28,<1
+dj-database-url>=2.2,<4
+python-dotenv>=1,<2
+whitenoise>=6.9,<7
+Pillow>=13.0.0
+gunicorn>=23,<24
+psycopg[binary]>=3.2,<4
